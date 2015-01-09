@@ -1,0 +1,14 @@
+#!/bin/sh
+
+brew tap caskroom/cask
+brew install brew-cask
+
+brew cask install dropbox
+brew cask install google-chrome
+brew cask install spectacle
+
+gem install parity
+gem install hub
+
+brew_install_or_upgrade "tree"
+brew_install_or_upgrade "watch"

@@ -1,0 +1,105 @@
+# Stolen from https://github.com/adarsh/dotfiles/
+#
+# Vim
+alias e='vim'
+
+# Local servers
+alias fs='clear && foreman start -p 3000'
+alias rs='rails server'
+
+# Routing
+alias rr='rake routes'
+alias rrg='rake routes | grep'
+
+# Migrations
+alias migrate='rake db:migrate db:test:prepare'
+alias remigrate='rake db:migrate && rake db:migrate:redo && rake db:schema:dump db:test:prepare'
+alias remongrate='rake mongoid:migrate && rake mongoid:migrate:redo'
+
+# Bundler
+alias be='bundle exec'
+alias bake='bundle exec rake'
+alias bmr='bundle && migrate && time rake'
+
+# git
+alias g='git'
+alias ga='git add'
+alias gaa='git add .'
+alias gap='clear && git add --patch'
+alias gb='clear && git branch'
+alias gcb='git checkout -b'
+alias gci='git pull --rebase && rake && git push'
+alias gco='git checkout'
+alias gcom='git checkout master'
+alias gd='clear && git diff'
+alias gdc='clear && git diff --cached'
+alias gdm='clear && git diff origin/master'
+alias gl='clear && git log'
+alias gp='git push'
+alias gs='git status'
+alias grc='git rebase --continue'
+alias gsh='git show'
+alias gu='git remote prune origin && git up'
+
+alias gc='git commit -v'
+alias gcm='git commit -m'
+alias gcam='git commit -a -m'
+alias gca='git commit -a'
+
+alias prune='git remote prune origin'
+
+alias unstage='git reset HEAD'
+
+alias wip="git commit -a -m 'wip' && git push"
+
+# github cli
+alias hb='gh browse'
+
+# middlman
+alias mm='middleman'
+
+# Command line utils
+alias -g G='| grep'
+alias -g M='| less'
+alias -g C='| pbcopy'
+alias ...='../..'
+alias ack='clear && ack'
+alias ag='clear && ag -i'
+alias c='clear'
+alias df='df -h'
+alias du='du -hs * | gsort -hr'
+alias l='ll'
+alias ll='ls -alh'
+alias ln='ln -v'
+alias mkdir='mkdir -p'
+alias s='cd ..'
+alias tr='tree -L 2'
+
+
+# Tail logs
+alias tlf='tail -f'
+alias tld='tail -f log/development.log'
+alias tlt='tail -f log/test.log'
+
+# Tmux
+alias tmn='tmux new -s'
+alias tma='tmux attach -t'
+alias t='tmux new-session -As'
+
+# Homebrew
+alias brew_update_all='brew update && brew upgrade'
+
+# Misc
+alias -g L='| wc -l'
+alias -g ONE='| awk '{ print \$1}''
+alias favorites='print -l -- ${(o)history%% *} | uniq -c | sort -nr | head -n 10'
+
+# rsync is better than cp
+alias rsync='rsync -avz --progress --partial'
+
+# Heroku Deploy
+alias deploy-staging='git push staging && heroku run rake db:migrate --remote staging && heroku restart --remote staging && staging open'
+alias deploy-production='git push production && heroku run rake db:migrate --remote production && heroku restart --remote production && production open'
+
+# Quick terminal notifications via https://github.com/alloy/terminal-notifier
+alias notify='terminal-notifier -message'

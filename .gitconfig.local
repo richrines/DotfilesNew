@@ -1,0 +1,8 @@
+[alias]
+  l = log --pretty=colored
+  jk = !git add --all && git commit --amend --no-edit && git push -f
+[pretty]
+  colored = format:%Cred%h%Creset %s %Cgreen(%cr) %C(bold blue)%an%Creset
+[user]
+  name = Rich Rines
+  email = rich.rines@me.com

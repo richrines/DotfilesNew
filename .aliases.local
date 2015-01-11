@@ -19,7 +19,11 @@ alias remongrate='rake mongoid:migrate && rake mongoid:migrate:redo'
 # Bundler
 alias be='bundle exec'
 alias bake='bundle exec rake'
+alias brake='bundle exec rake'
 alias bmr='bundle && migrate && time rake'
+
+# Rspec
+alias brspec='bundle exec rspec'
 
 # git
 alias g='git'

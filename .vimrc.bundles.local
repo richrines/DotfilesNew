@@ -3,3 +3,6 @@ Plugin 'tomasr/molokai'
 Plugin 'chriskempson/vim-tomorrow-theme'
 Plugin 'Lokaltog/vim-powerline'
 Plugin 'stephenmckinney/vim-solarized-powerline'
+
+"Autocomplete
+Plugin 'Valloric/YouCompleteMe'

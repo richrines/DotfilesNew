@@ -39,7 +39,7 @@ alias gd='clear && git diff'
 alias gdc='clear && git diff --cached'
 alias gdm='clear && git diff origin/master'
 alias gl='clear && git log'
-alias gp='git push'
+alias gp='git push && hub browse'
 alias gs='git status'
 alias grc='git rebase --continue'
 alias gsh='git show'
@@ -50,6 +50,9 @@ alias gcm='git commit -m'
 alias gcam='git commit -a -m'
 alias gca='git commit -a'
 
+alias cont='git rebase --continue'
+alias rbm='git rebase -i master'
+
 alias prune='git remote prune origin'
 
 alias unstage='git reset HEAD'
@@ -57,7 +60,7 @@ alias unstage='git reset HEAD'
 alias wip="git commit -a -m 'wip' && git push"
 
 # github cli
-alias hb='gh browse'
+alias hb='hub browse'
 
 # middlman
 alias mm='middleman'
@@ -107,3 +110,11 @@ alias deploy-production='git push production && heroku run rake db:migrate --rem
 
 # Quick terminal notifications via https://github.com/alloy/terminal-notifier
 alias notify='terminal-notifier -message'
+
+#lendinghome specific
+alias lhrc='heroku restart -r lendinghome-consumer'
+alias lhro='heroku restart -r lendinghome-ops'
+alias lhdc='lh-gitdiff lendinghome-consumer'
+alias lhdo='lh-gitdiff lendinghome-ops'
+alias lhm='heroku run rake db:migrate -r lendinghome-consumer'
+alias lhfc='lh-get-follower-config >> .env && be rails c'

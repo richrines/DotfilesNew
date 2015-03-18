@@ -1,6 +1,16 @@
 " Map escape to jj for testing
 inoremap jj <ESC>
 
+" http://andrew.stwrt.ca/posts/vim-ctags/
+" Vim + Ctags + Ctrlp
+nnoremap <leader>. :CtrlPTag<cr>
+
+" Vim + Ctags + Tagbar
+nnoremap <silent> <Leader>b :TagbarToggle<CR>
+
+" Toggle Tagbar
+nmap <F8> :TagbarToggle<CR>
+
 " Remap visual escape key
 vno v <esc>
 

@@ -4,6 +4,7 @@ Plugin 'chriskempson/vim-tomorrow-theme'
 Plugin 'Lokaltog/vim-powerline'
 Plugin 'stephenmckinney/vim-solarized-powerline'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'ecomba/vim-ruby-refactoring'
 
 "Autocomplete
 Plugin 'Valloric/YouCompleteMe'

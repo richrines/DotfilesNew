@@ -10,6 +10,7 @@ brew cask install iterm2
 brew cask install screenhero
 brew cask install slack
 brew cask install spectacle
+brew cask install rowanj-gitx
 
 gem install parity
 gem install hub
@@ -17,4 +18,5 @@ gem install hub
 brew_install_or_upgrade "tree"
 brew_install_or_upgrade "watch"
 brew_install_or_upgrade "fzf"
+brew_install_or_upgrade "fpp"
 brew_install_or_upgrade "autojump"

@@ -18,6 +18,9 @@ vno v <esc>
 colorscheme Tomorrow-Night-Eighties
 highlight NonText guibg=#060606
 
+" Autosave
+:au FocusLost * silent! wa
+
 " Rename files from within vim
 function! RenameFile()
     let old_name = expand('%')

@@ -1,6 +1,29 @@
 " Leader
 let mapleader = ","
 
+" Set terminal title
+set title 
+
+" Ignore case when searching
+set ignorecase            
+
+" Ignore case if search is lowercase, otherwise case-sensitive
+set smartcase              
+
+" Easier save mapping
+nnoremap W :update<CR>
+
+" Fuck you E
+nnoremap E :view<CR>
+
+command! -bang Q q<bang>
+command! -bang W w<bang>
+
+" Highlight VCS conflict markers
+match ErrorMsg '^\(<\|=\|>\)\{7\}\([^=].\+\)\?$'
+
+" Unfuck my screen
+nnoremap U :syntax sync fromstart<CR>:redraw!<CR>
 
 " Enable using the mouse if terminal emulator
 set mouse=a                 

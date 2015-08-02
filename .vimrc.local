@@ -1,3 +1,6 @@
+" Leader
+let mapleader = ","
+
 " Map escape to jj for testing
 inoremap jj <ESC>
 

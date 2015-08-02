@@ -1,10 +1,10 @@
 "Colorschemes
-Plugin 'tomasr/molokai'
-Plugin 'chriskempson/vim-tomorrow-theme'
-Plugin 'Lokaltog/vim-powerline'
-Plugin 'stephenmckinney/vim-solarized-powerline'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'ecomba/vim-ruby-refactoring'
+Plug 'tomasr/molokai'
+Plug 'chriskempson/vim-tomorrow-theme'
+Plug 'Lokaltog/vim-powerline'
+Plug 'stephenmckinney/vim-solarized-powerline'
+Plug 'airblade/vim-gitgutter'
+Plug 'ecomba/vim-ruby-refactoring'
 
 "Autocomplete
-Plugin 'Valloric/YouCompleteMe'
+Plug 'Valloric/YouCompleteMe'

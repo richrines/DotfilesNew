@@ -1,6 +1,10 @@
 " Leader
 let mapleader = ","
 
+
+" Enable using the mouse if terminal emulator
+set mouse=a                 
+
 " Map escape to jj for testing
 inoremap jj <ESC>
 

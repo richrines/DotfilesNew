@@ -2,16 +2,19 @@
 let mapleader = ","
 
 " Set terminal title
-set title 
+set title
 
 " http://statico.github.io/vim.html
 :nmap ; :CtrlPBuffer<CR>
 
 " Ignore case when searching
-set ignorecase            
+set ignorecase
+
+" 50 isn't enough
+set history=99
 
 " Ignore case if search is lowercase, otherwise case-sensitive
-set smartcase              
+set smartcase
 
 " Easier save mapping
 nnoremap W :update<CR>

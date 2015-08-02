@@ -4,6 +4,9 @@ let mapleader = ","
 " Set terminal title
 set title 
 
+" http://statico.github.io/vim.html
+:nmap ; :CtrlPBuffer<CR>
+
 " Ignore case when searching
 set ignorecase            
 

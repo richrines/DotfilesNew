@@ -8,3 +8,6 @@ Plug 'ecomba/vim-ruby-refactoring'
 
 "Autocomplete
 Plug 'Valloric/YouCompleteMe'
+
+" fzf
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': 'yes \| ./install' }

@@ -11,3 +11,5 @@ Plug 'Valloric/YouCompleteMe'
 
 " fzf
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': 'yes \| ./install' }
+
+Plug 'int3/vim-extradite'

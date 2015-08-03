@@ -32,7 +32,7 @@ match ErrorMsg '^\(<\|=\|>\)\{7\}\([^=].\+\)\?$'
 nnoremap U :syntax sync fromstart<CR>:redraw!<CR>
 
 " Enable using the mouse if terminal emulator
-set mouse=a                 
+set mouse=r
 
 " Map escape to jj for testing
 inoremap jj <ESC>

@@ -18,5 +18,6 @@ gem install hub
 brew_install_or_upgrade "tree"
 brew_install_or_upgrade "watch"
 brew_install_or_upgrade "fzf"
-brew_install_or_upgrade "fpp"
-brew_install_or_upgrade "autojump"
+
+git clone https://github.com/richrines/liquidprompt.git
+source liquidprompt/liquidprompt

@@ -99,3 +99,6 @@ vmap <Leader>y mm"+y<cr>`m
 " this one is broken tho
 " Enable paste mode, paste from system clipboard, then disable paste mode
 nmap <Leader>p mm:set paste<cr>"+p`mJx
+
+" go back to last file
+map <Leader><Leader> :e# <cr>

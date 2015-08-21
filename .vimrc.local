@@ -90,3 +90,12 @@ map <Leader>t :call RunCurrentSpecFile()<CR>
 map <Leader>s :call RunNearestSpec()<CR>
 map <Leader>l :call RunLastSpec()<CR>
 map <Leader>a :call RunAllSpecs()<CR>
+
+" Thanks Sean Huber!
+" Copy line or highlighted contents to system clipboard
+nmap <Leader>y V<Leader>y
+vmap <Leader>y mm"+y<cr>`m
+
+" this one is broken tho
+" Enable paste mode, paste from system clipboard, then disable paste mode
+nmap <Leader>p mm:set paste<cr>"+p`mJx

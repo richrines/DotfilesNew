@@ -12,4 +12,8 @@ Plug 'Valloric/YouCompleteMe'
 " fzf
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': 'yes \| ./install' }
 
+" commmit browser
 Plug 'int3/vim-extradite'
+
+" gists
+Plug 'mattn/gist-vim'

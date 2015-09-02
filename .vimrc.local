@@ -124,5 +124,5 @@ cnoreabbrev <expr> Q ((getcmdtype() is# ':' && getcmdline() is# 'Q')?('q'):('Q')
 
 " Open specs faster
 nmap <leader>v :AV<CR>
-nmap <leader>s :AS<CR>
+" nmap <leader>s :AS<CR>
 nmap <leader>a :A<CR>

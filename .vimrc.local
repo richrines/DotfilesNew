@@ -126,3 +126,16 @@ cnoreabbrev <expr> Q ((getcmdtype() is# ':' && getcmdline() is# 'Q')?('q'):('Q')
 nmap <leader>v :AV<CR>
 " nmap <leader>s :AS<CR>
 nmap <leader>a :A<CR>
+
+" Insert a hash rocket with <c-l>
+imap <c-l> <space>=><space>
+
+function! PromoteToLet()
+  :normal! dd
+  " :exec '?^\s*it\>'
+  :normal! P
+  :.s/\(\w\+\) = \(.*\)$/let(:\1) { \2 }/
+  :normal ==
+endfunction
+:command! PromoteToLet :call PromoteToLet()
+:map <leader>p :PromoteToLet<cr>

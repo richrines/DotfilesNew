@@ -46,6 +46,7 @@ alias gs='git status'
 alias grc='git rebase --continue'
 alias gsh='git show'
 alias gu='git remote prune origin && git up'
+alias stash!='g stash && !!'
 
 alias gc='git commit -v'
 alias gcm='git commit -m'

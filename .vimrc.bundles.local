@@ -17,3 +17,6 @@ Plug 'int3/vim-extradite'
 
 " gists
 Plug 'mattn/gist-vim'
+
+" seans git magic
+Plug 'shuber/vim-promiscuous'
